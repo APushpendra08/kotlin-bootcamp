@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.moodtracker.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.moodtracker.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.example.moodtracker.QuestionFragment"
+        android:label="fragment_question"
+        tools:layout="@layout/fragment_question" >
+        <action
+            android:id="@+id/action_questionFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.moodtracker.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+</navigation>

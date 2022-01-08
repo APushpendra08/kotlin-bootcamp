@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mood Tracker</string>
+    <string name="question_one">Чувство стойкого грустного, тревожного или пустого настроения</string>
+    <string name="question_two">Спал слишком мало или слишком много</string>
+    <string name="question_three">Потеряли аппетит и похудели или повысили аппетит и прибавили в весе</string>
+    <string name="question_four">Потеря интереса или удовольствия от деятельности, которой вы когда-то наслаждались</string>
+    <string name="question_five">Чувствовал себя беспокойным или раздражительным</string>
+    <string name="answer_one">Пожалуйста, обратитесь к терапевту как можно скорее</string>
+    <string name="answer_two">Пожалуйста, поговорите с семьей или друзьями, это может помочь.</string>
+    <string name="answer_three">Попробуйте заняться спортом, они отлично улучшают настроение.</string>
+    <string name="answer_four">У тебя все хорошо, попробуй заняться чем-нибудь, что сделает тебя радостным</string>
+    <string name="answer_five">Ты на седьмом небе от счастья, дай пять этому. Распространяйте свое счастье</string>
+    <string name="yes">да</string>
+    <string name="no">Нет</string>
+</resources>

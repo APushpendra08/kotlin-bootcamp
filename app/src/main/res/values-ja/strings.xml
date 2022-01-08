@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mood Tracker</string>
+    <string name="question_one">持続的な悲しみ、不安、または空虚な気分を感じた</string>
+    <string name="question_two">睡眠が少なすぎる、または多すぎる</string>
+    <string name="question_three">食欲不振と体重減少、または食欲増進と体重増加があった</string>
+    <string name="question_four">かつて楽しんだ活動への興味や喜びを失った</string>
+    <string name="question_five">落ち着きがない、またはイライラする</string>
+    <string name="answer_one">できるだけ早くセラピストに相談してください</string>
+    <string name="answer_two">ご家族やお子さんにご相談ください。</string>
+    <string name="answer_three">いくつかの運動を試してみてください、彼らは素晴らしい気分エンハンサーです</string>
+    <string name="answer_four">あなたは良いことをしています、あなたを楽しいものにするいくつかの活動をしてみてください</string>
+    <string name="answer_five">あなたはクラウドナイン、ハイタッチです。あなたの幸せを広める</string>
+    <string name="yes" translatable="false">はい</string>
+    <string name="no" translatable="false">番号</string>
+</resources>

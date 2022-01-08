@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Mood Tracker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <string name="take_mood_test" translatable="false">Take Mood Test</string>
+    <string name="start_mood_test" translatable="false">Start Mood Test</string>
+    <string name="lets_start_test" translatable="false">Let\'s Start the Test</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="question_one">Felt persistent sad, anxious or empty mood</string>
+    <string name="question_two">Been sleeping too little or too much</string>
+    <string name="question_three">Had a loss of appetite and weight loss or increase appetite and increase weight</string>
+    <string name="question_four">Lost of interest or pleasure in activities you once enjoyed</string>
+    <string name="question_five">Felt restless or irritable</string>
+
+    <string name="answer_one">Please consult a therapist as soon as possible</string>
+    <string name="answer_two">Please talk out to family or friedns, that might help.</string>
+    <string name="answer_three">Try some exercise, they\'re great mood enhancer</string>
+    <string name="answer_four">You\'re doing good, try to do some activity which makes you joyful</string>
+    <string name="answer_five">You\'re cloud nine, High five to that. Spread your happiness</string>
+
+</resources>
