@@ -19,6 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_add"
         android:text="Add new Todo"/>
 
     <Button
@@ -26,6 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_lis"
         android:text="View All Todos"/>
 
 </LinearLayout>

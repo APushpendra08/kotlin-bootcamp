@@ -9,7 +9,17 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import androidx.navigation.fragment.findNavController
+import com.example.todoapp.Database.DatabaseHelper
+import com.example.todoapp.Database.DatabaseHelperImplementation
+import com.example.todoapp.Database.Todo
+import com.example.todoapp.Database.TodoDatabaseBuilder
+import com.example.todoapp.R
 import com.example.todoapp.databinding.FragmentAddTodoBinding
+import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers.IO
+import kotlinx.coroutines.Dispatchers.Main
+import kotlinx.coroutines.launch
 
 // TODO: Rename parameter arguments, choose names that match
 
@@ -18,6 +28,7 @@ class AddTodoFragment : Fragment() {
     lateinit var binding : FragmentAddTodoBinding
     var dateStr = ""
     var timeStr = ""
+    var todoStr = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,6 +57,17 @@ class AddTodoFragment : Fragment() {
                     return@setOnClickListener
                 } else {
                     // DB Insert
+                    todoStr = etTodoText.text.toString()
+                    val dbHelper = DatabaseHelperImplementation(TodoDatabaseBuilder.getInstance(view.context))
+                    CoroutineScope(IO).launch {
+                        dbHelper.insert(Todo(dateStr, timeStr, todoStr))
+                        var list = dbHelper.getTodos()
+                        CoroutineScope(Main).launch {
+                            Toast.makeText(context, list.toString(), Toast.LENGTH_SHORT).show()
+                            findNavController().navigate(R.id.action_addTodoFragment_to_todoListFragment)
+//                            findNavController().popBackStack()
+                        }
+                    }
                 }
             }
         }
@@ -54,7 +76,7 @@ class AddTodoFragment : Fragment() {
         }
 
         binding.datePicker.setOnDateChangedListener { view, year, monthOfYear, dayOfMonth ->
-            dateStr = year.toString()  + "/" + monthOfYear.toString() + "/" + dayOfMonth.toString()
+            dateStr = year.toString()  + "/" + (monthOfYear+1).toString() + "/" + dayOfMonth.toString()
             binding.tvSelectDate.text = "Selected Date: " + dateStr
 
         }
